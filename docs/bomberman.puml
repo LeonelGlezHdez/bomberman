@@ -1,0 +1,41 @@
+@startuml Bomberman
+
+class Juego
+class Jugador
+
+class Bomberman
+class Habilidad
+class PotenciaFuego
+class Enmigo
+
+class Sala
+class Laberinto
+class Puerta
+class Roca
+
+class Bomba
+class PowerUp
+class BombUp
+class FireUp
+class Patines
+
+
+Juego "1" *-- "1" Jugador
+jugador "1" o-- "1" Bomberman
+Bomberman "1" *-- "*" Habilidad
+
+BombUp --|> PowerUp
+FireUp --|> PowerUp
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml
